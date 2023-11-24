@@ -1,6 +1,6 @@
-﻿namespace lab4;
+﻿namespace lr4;
 
-public class WaterWell
+public class Waterwell
 {
     public int WaterWellId { get; set; }
     public EnumWaterwellStatus WaterWellStatus { get; set; }
@@ -8,7 +8,7 @@ public class WaterWell
     public float Depth { get; set; }
     public List<Sensor> Sensors { get; set; }
 
-    public WaterWell(int waterWellId, EnumWaterwellStatus waterWellStatus, string location, float depth, List<Sensor> sensors)
+    public Waterwell(int waterWellId, EnumWaterwellStatus waterWellStatus, string location, float depth, List<Sensor> sensors)
     {
         WaterWellId = waterWellId;
         WaterWellStatus = waterWellStatus;

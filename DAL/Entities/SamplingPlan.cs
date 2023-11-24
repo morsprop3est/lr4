@@ -1,4 +1,4 @@
-﻿namespace lab4;
+﻿namespace lr4;
 
 public class SamplingPlan
 {
