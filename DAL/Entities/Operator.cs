@@ -2,12 +2,12 @@
 
 public class Operator
 {
-    public int Number { get; set; }
+    public int operator_id { get; set; }
     public string Name { get; set; }
     
     public Operator(int number, string name)
     {
-        Number = number;
+        operator_id = number;
         Name = name;
     }
 
