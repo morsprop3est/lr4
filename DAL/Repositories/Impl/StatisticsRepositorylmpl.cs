@@ -1,12 +1,11 @@
-﻿using lab4.EF;
-using lab4.Entities;
-using lab4.Repositories.Interfaces;
+﻿using DAL.EF;
+using DAL.Repositories.Interfaces;
 
-namespace lab4.Repositories.Impl
+namespace lr4.Repositories.Impl
 {
-    public class StatisticsRepository : BaseRepository<Data>, IStatisticsRepository
+    public class StatisticsRepository : BaseRepository<Statistics>, IStatisticsRepository
     {
-        internal StatisticsRepository(DataContext context) : base(context)
+        internal StatisticsRepository(SamplingContext context) : base(context)
         {
         }
     }

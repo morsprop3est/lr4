@@ -1,12 +1,11 @@
-﻿using lab4.EF;
-using lab4.Entities;
-using lab4.Repositories.Interfaces;
+﻿using DAL.EF;
+using DAL.Repositories.Interfaces;
 
-namespace lab4.Repositories.Impl
+namespace lr4.Repositories.Impl
 {
-    public class WaterQualityStandartRepository : BaseRepository<Data>, IWaterQualityStandartRepository
+    public class WaterQualityStandartRepository : BaseRepository<WaterQualityStandard>, IWaterQualityStandartRepository
     {
-        internal WaterQualityStandartRepository(DataContext context) : base(context)
+        internal WaterQualityStandartRepository(SamplingContext context) : base(context)
         {
         }
     }

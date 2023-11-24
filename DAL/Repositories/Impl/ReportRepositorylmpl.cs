@@ -1,12 +1,11 @@
-﻿using lab4.EF;
-using lab4.Entities;
-using lab4.Repositories.Interfaces;
+﻿using DAL.EF;
+using DAL.Repositories.Interfaces;
 
-namespace lab4.Repositories.Impl
+namespace lr4.Repositories.Impl
 {
-    public class ReportRepository : BaseRepository<Data>, IReportRepository
+    public class ReportRepository : BaseRepository<Report>, IReportRepository
     {
-        internal ReportRepository(DataContext context) : base(context)
+        internal ReportRepository(SamplingContext context) : base(context)
         {
         }
     }

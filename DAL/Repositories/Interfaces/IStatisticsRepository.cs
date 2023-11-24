@@ -1,6 +1,6 @@
-﻿using lr4.Repositories.Interfaces;
+﻿using lr4;
 
-namespace lr4.DAL.Repositories.Interfaces;
+namespace DAL.Repositories.Interfaces;
 
 public interface IStatisticsRepository : IRepository<Statistics>
 {

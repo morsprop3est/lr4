@@ -1,4 +1,4 @@
-﻿using lr4.Repositories.Interfaces;
+﻿using DAL.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace lr4.Repositories.Impl

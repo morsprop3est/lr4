@@ -1,12 +1,11 @@
-﻿using lab4.EF;
-using lab4.Entities;
-using lab4.Repositories.Interfaces;
+﻿using DAL.EF;
+using DAL.Repositories.Interfaces;
 
-namespace lab4.Repositories.Impl
+namespace lr4.Repositories.Impl
 {
-    public class SamplingPlanRepository : BaseRepository<Data>, ISamplingPlanRepository
+    public class SamplingPlanRepository : BaseRepository<SamplingPlan>, ISamplingPlanRepository
     {
-        internal SamplingPlanRepository(DataContext context) : base(context)
+        internal SamplingPlanRepository(SamplingContext context) : base(context)
         {
         }
     }
