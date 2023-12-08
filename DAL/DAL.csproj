@@ -7,13 +7,22 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Repositories\" />
+      <Folder Include="DAL\" />
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="dotnet-xunit" Version="2.4.0-beta.1.build3958" />
       <PackageReference Include="EntityFramework" Version="6.4.4" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0-preview-23577-04" />
+      <PackageReference Include="Microsoft.NETCore.App" Version="2.2.8" />
+      <PackageReference Include="Moq" Version="4.20.70" />
       <PackageReference Include="MySql.Data" Version="8.2.0" />
+      <PackageReference Include="MySqlConnector" Version="2.3.1" />
+      <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
+      <PackageReference Include="Test" Version="2.0.1.1" />
+      <PackageReference Include="xunit" Version="2.6.2" />
+      <PackageReference Include="xunit.core" Version="2.6.2" />
     </ItemGroup>
 
 </Project>

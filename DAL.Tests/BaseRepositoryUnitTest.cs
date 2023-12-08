@@ -24,7 +24,7 @@ namespace DAL.Tests
     public class BaseRepositoryUnitTests
     {
         [Fact]
-        public void Create_InputOperatorInstance_CalledAddMethodOfDBSetWithStreetInstance()
+        public void Create_InputStreetInstance_CalledAddMethodOfDBSetWithStreetInstance()
         {
             // Arrange
             DbContextOptions opt = new DbContextOptionsBuilder<SamplingContext>()
@@ -33,7 +33,7 @@ namespace DAL.Tests
             var mockDbSet = new Mock<DbSet<Operator>>();
             mockContext
                 .Setup(context => 
-                    context.Set<Operator>(  
+                    context.Set<Operator>(
                         ))
                 .Returns(mockDbSet.Object);
             var repository = new TestOperatorRepository(mockContext.Object);
@@ -65,16 +65,16 @@ namespace DAL.Tests
                 .Returns(mockDbSet.Object);
             var repository = new TestOperatorRepository(mockContext.Object);
 
-            Operator expectedOperator = new Operator() { operatorID = 1};
-            mockDbSet.Setup(mock => mock.Find(expectedOperator.operatorID)).Returns(expectedOperator);
+            Operator expectedOperator = new Operator(1, "Test") { operator_id = 1};
+            mockDbSet.Setup(mock => mock.Find(expectedOperator.operator_id)).Returns(expectedOperator);
 
             //Act
-            repository.Delete(expectedOperator.operatorID);
+            repository.Delete(expectedOperator.operator_id);
 
             // Assert
             mockDbSet.Verify(
                 dbSet => dbSet.Find(
-                    expectedOperator.operatorID
+                    expectedOperator.operator_id
                     ), Times.Once());
             mockDbSet.Verify(
                 dbSet => dbSet.Remove(
@@ -96,18 +96,18 @@ namespace DAL.Tests
                         ))
                 .Returns(mockDbSet.Object);
 
-            Operator expectedOperator = new Operator() { operatorID = 1 };
-            mockDbSet.Setup(mock => mock.Find(expectedOperator.operatorID))
+            Operator expectedOperator = new Operator(1, "Test") { operator_id = 1 };
+            mockDbSet.Setup(mock => mock.Find(expectedOperator.operator_id))
                     .Returns(expectedOperator);
             var repository = new TestOperatorRepository(mockContext.Object);
 
             //Act
-            var actualOperator = repository.Get(expectedOperator.operatorID);
+            var actualOperator = repository.Get(expectedOperator.operator_id);
 
             // Assert
             mockDbSet.Verify(
                 dbSet => dbSet.Find(
-                    expectedOperator.operatorID
+                    expectedOperator.operator_id
                     ), Times.Once());
             Assert.Equal(expectedOperator, actualOperator);
         }

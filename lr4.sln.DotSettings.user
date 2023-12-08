@@ -1,0 +1,57 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\Mykola\AppData\Local\JetBrains\Rider2023.2\resharper-host\temp\Rider\vAny\CoverageData\_lr4.776113582\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=07529216_002D8622_002D4682_002Daa91_002D47180d49209c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from BaseRepositoryUnitTest.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;70EA5CEB-5AC5-489D-A9F2-2785AF20ED58/d:DAL.Tests/f:BaseRepositoryUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=260a2ea7_002D9543_002D4a67_002D8340_002Ddd6ecbe9cb07/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BaseRepositoryUnitTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::70EA5CEB-5AC5-489D-A9F2-2785AF20ED58::net7.0::DAL.Tests.BaseRepositoryUnitTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=38d0f7b1_002D8ebd_002D4d75_002Da6f2_002D4842c5b777ad/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BaseRepositoryUnitTests #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::70EA5CEB-5AC5-489D-A9F2-2785AF20ED58::net7.0::DAL.Tests.BaseRepositoryUnitTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4cd19fe3_002D7044_002D4694_002Dbbf6_002De02381c6c4af/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from BaseRepositoryUnitTest.cs #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;70EA5CEB-5AC5-489D-A9F2-2785AF20ED58/d:DAL.Tests/f:BaseRepositoryUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6510b10e_002D12b0_002D4a71_002D8162_002Dd3358cc2b442/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BaseRepositoryUnitTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::70EA5CEB-5AC5-489D-A9F2-2785AF20ED58::net7.0::DAL.Tests.BaseRepositoryUnitTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a4a18f43_002D47fe_002D4a89_002D8dd4_002D67b1bc77e0a0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BaseRepositoryUnitTests #8" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::70EA5CEB-5AC5-489D-A9F2-2785AF20ED58::net7.0::DAL.Tests.BaseRepositoryUnitTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b5ca8521_002D071e_002D4662_002Da0df_002D70337bc6333a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BaseRepositoryUnitTests #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::70EA5CEB-5AC5-489D-A9F2-2785AF20ED58::net7.0::DAL.Tests.BaseRepositoryUnitTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c26943ef_002Ddf1c_002D425d_002Db150_002Df71767fc51a5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="OperatorRepositoryInMemoryDBTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::70EA5CEB-5AC5-489D-A9F2-2785AF20ED58::net7.0::DAL.Tests.OperatorRepositoryInMemoryDBTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c9ca34ad_002D19d4_002D4c95_002D808f_002D7b1377607e75/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BaseRepositoryUnitTests #7" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::70EA5CEB-5AC5-489D-A9F2-2785AF20ED58::net7.0::DAL.Tests.BaseRepositoryUnitTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d45a9c92_002D5d26_002D4670_002D9e96_002D016ea8e7c8a5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BaseRepositoryUnitTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::70EA5CEB-5AC5-489D-A9F2-2785AF20ED58::net7.0::DAL.Tests.BaseRepositoryUnitTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dbc6fea5_002Dcd38_002D4a63_002Dbbe3_002D47dbcf8bc9f8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BaseRepositoryUnitTests #6" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::70EA5CEB-5AC5-489D-A9F2-2785AF20ED58::net7.0::DAL.Tests.BaseRepositoryUnitTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e4a911a0_002D4c19_002D4857_002D8a97_002D410ce81e7b01/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from BaseRepositoryUnitTest.cs #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;70EA5CEB-5AC5-489D-A9F2-2785AF20ED58/d:DAL.Tests/f:BaseRepositoryUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	</wpf:ResourceDictionary>

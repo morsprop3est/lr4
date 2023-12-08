@@ -5,7 +5,7 @@ using System;
 
 class Program
 {
-    static void Main()
+    static void main()
     {
         using (MySqlConnection connection = new MySqlConnection("Server=localhost;Database=trpz;Uid=root;Pwd=2004;"))
         {

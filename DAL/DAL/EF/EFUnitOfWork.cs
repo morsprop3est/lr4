@@ -18,9 +18,9 @@ public class EFUnitOfWork : IUnitOfWork
     private WaterQualityStandartRepository WaterQualityStandartRepository;
     private WaterwellRepository WaterwellRepository;
 
-    public EFUnitOfWork(DbContextOptions options)
+    public EFUnitOfWork(SamplingContext context)
     {
-        db = new SamplingContext(options);
+        db = context;
     }
 
     
@@ -115,6 +115,7 @@ public class EFUnitOfWork : IUnitOfWork
         }
     }
 
+
     public IDataRepository Data { get; }
     public IOperatorRepository Operator { get; }
     public IReportRepository Repository { get; }
@@ -130,7 +131,6 @@ public class EFUnitOfWork : IUnitOfWork
         db.SaveChanges();
     }
     private bool disposed = false;
-    private IUnitOfWork _unitOfWorkImplementation;
 
     public virtual void Dispose(bool disposing)
     {
