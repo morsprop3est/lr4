@@ -1,25 +1,22 @@
-﻿using System;
-using Xunit;
-using lr4.Repositories.Impl;
-using DAL.EF;
-using Microsoft.EntityFrameworkCore;
+﻿using DAL.EF;
 using DAL.Repositories.Interfaces;
-using System.Linq;
 using lr4;
+using Microsoft.EntityFrameworkCore;
+using Xunit;
 
-
-namespace DAL.Tests
+namespace DAL.DAL.Tests
 {
-    public class OperatorRepositoryInMemoryDBTests
+    public class OperatorRepositoryInMemoryDbTests
     {
 
         public SamplingContext Context => MySqlInMemoryContext();
 
         private SamplingContext MySqlInMemoryContext()
         {
-            // Параметри підключення до тестової бази MySQL
+            var serverVersion = new MySqlServerVersion(new Version(8, 0, 23)); 
+
             var optionsBuilder = new DbContextOptionsBuilder<SamplingContext>();
-            optionsBuilder.UseMySQL("Server=localhost;Database=trpz;Uid=root;Pwd=2004;");
+            optionsBuilder.UseMySql("Server=localhost;Database=trpz;Uid=root;Pwd=2004;", serverVersion);
 
             var context = new SamplingContext(optionsBuilder.Options);
             context.Database.EnsureCreated();

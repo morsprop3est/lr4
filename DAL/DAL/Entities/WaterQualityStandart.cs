@@ -1,15 +1,11 @@
 ﻿namespace lr4;
-
+using System.ComponentModel.DataAnnotations;
 public class WaterQualityStandard
 {
+    [Key]
     public string WQSName { get; set; }
     public float Limit { get; set; }
     public EnumDataUnit WQSType { get; set; }
 
-    public WaterQualityStandard(string wqsName, float limit, EnumDataUnit wqsType)
-    {
-        WQSName = wqsName;
-        Limit = limit;
-        WQSType = wqsType;
-    }
+
 }
