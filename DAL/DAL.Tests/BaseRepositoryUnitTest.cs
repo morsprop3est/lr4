@@ -1,11 +1,12 @@
 ﻿using System;
 using Xunit;
 using lr4.Repositories.Impl;
-using DAL.EF;
 using Microsoft.EntityFrameworkCore;
 using DAL.Repositories.Interfaces;
 using System.Linq;
-using DAL.EF;
+using DAL.DAL.EF;
+using DAL.DAL.Entities;
+using DAL.DAL.Repositories.Impl;
 using lr4;
 using lr4.Repositories.Impl;
 using Moq;

@@ -1,4 +1,6 @@
-﻿namespace lr4;
+﻿using lr4;
+
+namespace DAL.DAL.Entities;
 
 public class Report : Statistics
 {

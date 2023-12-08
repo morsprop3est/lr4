@@ -1,22 +1,23 @@
-﻿using DAL.Repositories.Interfaces;
+﻿using DAL.DAL.Repositories.Impl;
+using DAL.DAL.Repositories.Interfaces;
+using DAL.DAL.UnitOfWork;
+using DAL.Repositories.Interfaces;
 using lr4.Repositories.Impl;
-using lr4.UnitOfWork;
-using Microsoft.EntityFrameworkCore;
 
-namespace DAL.EF;
+namespace DAL.DAL.EF;
 
 public class EFUnitOfWork : IUnitOfWork
 {
     private SamplingContext db;
-    private DataRepository DataRepository;
-    private OperatorRepository OperatorRepository;
-    private ReportRepository ReportRepository;
-    private SamplingPlanRepository SamplingPlanRepository;
-    private SensorRepository SensorRepository;
-    private StatisticsRepository StatisticsRepository;
-    private UnplannedSamplingRepository UnplannedSamplingRepository;
-    private WaterQualityStandartRepository WaterQualityStandartRepository;
-    private WaterwellRepository WaterwellRepository;
+    private DataRepository dataRepository;
+    private OperatorRepository operatorRepository;
+    private ReportRepository reportRepository;
+    private SamplingPlanRepository samplingPlanRepository;
+    private SensorRepository sensorRepository;
+    private StatisticsRepository statisticsRepository;
+    private UnplannedSamplingRepository unplannedSamplingRepository;
+    private WaterQualityStandartRepository waterQualityStandartRepository;
+    private WaterwellRepository waterwellRepository;
 
     public EFUnitOfWork(SamplingContext context)
     {
@@ -29,9 +30,9 @@ public class EFUnitOfWork : IUnitOfWork
     {
         get
         {
-            if (DataRepository == null)
-                DataRepository = new DataRepository(db);
-            return DataRepository;
+            if (dataRepository == null)
+                dataRepository = new DataRepository(db);
+            return dataRepository;
         }
     }
     
@@ -39,19 +40,21 @@ public class EFUnitOfWork : IUnitOfWork
     {
         get
         {
-            if (OperatorRepository == null)
-                OperatorRepository = new OperatorRepository(db);
-            return OperatorRepository;
+            if (operatorRepository == null)
+                operatorRepository = new OperatorRepository(db);
+            return operatorRepository;
         }
     }
+
+    public IReportRepository Repositories { get; }
 
     public IReportRepository Reports
     {
         get
         {
-            if (ReportRepository == null)
-                ReportRepository = new ReportRepository(db);
-            return ReportRepository;
+            if (reportRepository == null)
+                reportRepository = new ReportRepository(db);
+            return reportRepository;
         }
     }
 
@@ -59,9 +62,9 @@ public class EFUnitOfWork : IUnitOfWork
     {
         get
         {
-            if (SamplingPlanRepository == null)
-                SamplingPlanRepository = new SamplingPlanRepository(db);
-            return SamplingPlanRepository;
+            if (samplingPlanRepository == null)
+                samplingPlanRepository = new SamplingPlanRepository(db);
+            return samplingPlanRepository;
         }
     }
 
@@ -69,9 +72,9 @@ public class EFUnitOfWork : IUnitOfWork
     {
         get
         {
-            if (StatisticsRepository == null)
-                StatisticsRepository = new StatisticsRepository(db);
-            return StatisticsRepository;
+            if (statisticsRepository == null)
+                statisticsRepository = new StatisticsRepository(db);
+            return statisticsRepository;
         }
     }
 
@@ -79,9 +82,9 @@ public class EFUnitOfWork : IUnitOfWork
     {
         get
         {
-            if (SensorRepository == null)
-                SensorRepository = new SensorRepository(db);
-            return SensorRepository;
+            if (sensorRepository == null)
+                sensorRepository = new SensorRepository(db);
+            return sensorRepository;
         }
     }
 
@@ -89,9 +92,9 @@ public class EFUnitOfWork : IUnitOfWork
     {
         get
         {
-            if (UnplannedSamplingRepository == null)
-                UnplannedSamplingRepository = new UnplannedSamplingRepository(db);
-            return UnplannedSamplingRepository;
+            if (unplannedSamplingRepository == null)
+                unplannedSamplingRepository = new UnplannedSamplingRepository(db);
+            return unplannedSamplingRepository;
         }
     }
 
@@ -99,19 +102,19 @@ public class EFUnitOfWork : IUnitOfWork
     {
         get
         {
-            if (WaterQualityStandartRepository == null)
-                WaterQualityStandartRepository = new WaterQualityStandartRepository(db);
-            return WaterQualityStandartRepository;
+            if (waterQualityStandartRepository == null)
+                waterQualityStandartRepository = new WaterQualityStandartRepository(db);
+            return waterQualityStandartRepository;
         }
     }
 
-    public WaterwellRepository Waterwells
+    public IWaterwellRepository Waterwells
     {
         get
         {
-            if (WaterwellRepository == null)
-                WaterwellRepository = new WaterwellRepository(db);
-            return WaterwellRepository;
+            if (waterwellRepository == null)
+                waterwellRepository = new WaterwellRepository(db);
+            return waterwellRepository;
         }
     }
 

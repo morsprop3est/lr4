@@ -1,4 +1,4 @@
-﻿namespace lr4;
+﻿namespace DAL.DAL.Entities;
 
 public enum EnumDataUnit
 {

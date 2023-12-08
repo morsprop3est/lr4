@@ -1,7 +1,7 @@
-﻿using lr4;
+﻿using DAL.DAL.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace DAL.EF;
+namespace DAL.DAL.EF;
 
 public class SamplingContext : DbContext
 {

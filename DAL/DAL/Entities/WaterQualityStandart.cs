@@ -1,5 +1,7 @@
-﻿namespace lr4;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace DAL.DAL.Entities;
+
 public class WaterQualityStandard
 {
     [Key]

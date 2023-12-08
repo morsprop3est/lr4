@@ -1,7 +1,10 @@
-﻿using DAL.EF;
+﻿using DAL.DAL.EF;
+using DAL.DAL.Entities;
+using DAL.DAL.Repositories.Interfaces;
 using DAL.Repositories.Interfaces;
+using lr4.Repositories.Impl;
 
-namespace lr4.Repositories.Impl
+namespace DAL.DAL.Repositories.Impl
 {
     public class SamplingPlanRepository : BaseRepository<SamplingPlan>, ISamplingPlanRepository
     {

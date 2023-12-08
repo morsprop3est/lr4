@@ -1,6 +1,6 @@
-﻿using lr4;
+﻿using DAL.DAL.Entities;
 
-namespace DAL.Repositories.Interfaces;
+namespace DAL.DAL.Repositories.Interfaces;
 public interface ISamplingPlanRepository : IRepository<SamplingPlan>
 {
     

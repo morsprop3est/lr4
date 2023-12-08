@@ -1,9 +1,7 @@
-﻿namespace lr4;
-using System.ComponentModel.DataAnnotations;
+﻿namespace DAL.DAL.Entities;
 
 public class SamplingPlan
 {
-    [Key]
     public int PlanId { get; set; }
     public int WaterWellId { get; set; }
     public DateTime StartTime { get; set; }

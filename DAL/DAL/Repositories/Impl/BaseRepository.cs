@@ -1,7 +1,7 @@
-﻿using DAL.Repositories.Interfaces;
+﻿using DAL.DAL.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace lr4.Repositories.Impl
+namespace DAL.DAL.Repositories.Impl
 {
     public abstract class BaseRepository<T>
         : IRepository<T>
@@ -23,10 +23,16 @@ namespace lr4.Repositories.Impl
             var item = Get(id);
             _set.Remove(item);
         }
-        public IEnumerable<T> Find(Func<T, bool> predicate)
+        public IEnumerable<T> Find(
+            Func<T, bool> predicate, 
+            int pageNumber = 0, 
+            int pageSize = 10)
         {
-            return
-                _set.Where(predicate).ToList();
+            return 
+                _set.Where(predicate)
+                    .Skip(pageSize * pageNumber)
+                    .Take(pageNumber)
+                    .ToList();
         }
         public T Get(int id)
         {
